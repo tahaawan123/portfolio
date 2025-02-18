@@ -2,41 +2,47 @@ import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhoneForwarded } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
-import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="h-36 bg-black  text-white ">
-      <h2 className="text-center text-white">All rights reserved © 2024 </h2>
-        <div className="flex  ">
-            <div className="ml-20 mt-14">
-          <HiOutlineMail  className="text-4xl"/>
-          <p className="underline"> Email:tahaawan598@gmail.com</p>
-          </div>
+    <footer className="bg-black text-white py-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        {/* Footer Brand Section */}
+        <div className="mb-6 md:mb-0">
+          <h1 className="text-2xl font-bold">Muhammad Taha</h1>
+          <p className="text-gray-400">Frontend & Backend Developer</p>
+        </div>
 
-          <div className="ml-40 mt-14">
-            <FiPhoneForwarded className="text-4xl"/>
-            <p className="underline">Phone Number:03082520161</p>
+        {/* Footer Contact Section */}
+        <div className="space-y-4">
+          <div className="flex items-center space-x-3 hover:text-red-400 transition-colors">
+            <HiOutlineMail className="text-2xl" />
+            <p>Email: <a href="mailto:tahaawan598@gmail.com" className="underline">tahaawan598@gmail.com</a></p>
           </div>
-
-          <div className="ml-40 mt-14">
-            <Link href={"https://www.linkedin.com/in/muhammad-taha-4735912b6/"}>
-              {" "}
-              <CiLinkedin className="text-4xl " /> LinkedIn
-            </Link>
-          </div>
-
-          <div className="ml-40 mt-14">
-            <Link href={"https://github.com/tahaawan123"}>
-              {" "}
-              <FaGithubSquare className="text-4xl" /> GitHub
-            </Link>
+          <div className="flex items-center space-x-3 hover:text-red-400 transition-colors">
+            <FiPhoneForwarded className="text-2xl" />
+            <p>Phone: <a href="tel:+923082520161" className="underline">0308-2520161</a></p>
           </div>
         </div>
-      </footer>
-    </div>
+
+        {/* Footer Social Section */}
+        <div className="flex space-x-6 mt-6 md:mt-0">
+          <Link href="https://www.linkedin.com/in/muhammad-taha-4735912b6/" target="_blank" className="hover:text-blue-500 transition-transform transform hover:scale-110">
+            <CiLinkedin className="text-3xl" />
+          </Link>
+          <Link href="https://github.com/tahaawan123" target="_blank" className="hover:text-gray-500 transition-transform transform hover:scale-110">
+            <FaGithubSquare className="text-3xl" />
+          </Link>
+        </div>
+      </div>
+
+      {/* Footer Bottom Section */}
+      <div className="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
+        <p>All rights reserved © 2024 | Built with ❤️ by Muhammad Taha</p>
+      </div>
+    </footer>
   );
 };
 

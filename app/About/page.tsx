@@ -1,20 +1,67 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
+import { FaUser, FaRoute, FaGraduationCap } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <div className='border-b-4 border-red-400 '>
-      
-      <h1 className='text-4xl mt-5 text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500'>
-        About me
+    <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-24 px-6">
+      <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500 text-center mb-12">
+        About Me
       </h1>
-      <p className='text-xl text-center p-28 text-slate-700 border-2 rounded-3xl border-[#ffc08a] m-11 shadow-2xl font-bold bg-[#ffc08a] text-wrap'>
-      Hello I am Muhammad Taha passionate web developer with a solid foundation in HTML CSS, and JavaScript. I enjoy creating dynamic and responsive web applications that provide a great user experience. My journey in web development has equipped me with the skills to bring ideas to life through code. Currently, I am expanding my knowledge by learning Next.js, a powerful framework for building server-side rendered applications. This has allowed me to deepen my understanding of modern web development practices and improve my ability to create efficient and scalable applications. In addition to my technical skills, I am committed to continuous learning and staying updated with the latest trends and technologies in the web development field. Balancing my studies with practical projects has been a rewarding challenge, as I strive to apply what I learn in real-world scenarios. I am excited about the future of web development and look forward to taking on new challenges and collaborating with others in this dynamic field.
 
-Thank you for taking the time to learn more about me. I hope to connect with you soon!
-      </p>
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+
+        {/* Left Side: Image */}
+        <div className="w-full md:w-1/3 text-center">
+          <Image
+            src="/img.jpg"
+            alt="Muhammad Taha"
+            width={300}
+            height={300}
+            className="rounded-full shadow-lg animate__animated animate__fadeIn animate__delay-1s"
+          />
+        </div>
+
+        {/* Right Side: Sections */}
+        <div className="w-full md:w-2/3 space-y-8 relative">
+
+          {/* Introduction Section */}
+          <div className="relative flex items-start">
+            <FaUser className="text-white text-4xl absolute -left-4 top-0 transform transition-transform duration-300 hover:scale-110" />
+            <div className="border-l-4 border-white pl-6">
+              <h2 className="text-2xl font-semibold text-pink-500">Introduction</h2>
+              <p className="text-lg text-slate-300 leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
+                Hello, I am Muhammad Taha, a Frontend Web Developer with a solid foundation in HTML, Custom CSS, Tailwind CSS, JavaScript, TypeScript, Next.js, and ShadCN. I have a basic understanding of backend development, including working with Sanity and creating efficient APIs. I enjoy building dynamic and responsive web applications, providing seamless user experiences, and continuously learning new technologies to stay updated with modern web development trends.
+              </p>
+            </div>
+          </div>
+
+          {/* My Journey Section */}
+          <div className="relative flex items-start">
+            <FaRoute className="text-white text-4xl absolute -left-4 top-0 transform transition-transform duration-300 hover:scale-110" />
+            <div className="border-l-4 border-white pl-6">
+              <h2 className="text-2xl font-semibold text-pink-500">My Journey</h2>
+              <p className="text-lg text-slate-300 leading-relaxed animate__animated animate__fadeIn animate__delay-3s">
+                My journey in web development began with a curiosity to build something interactive on the web. Over the years, I&#39;ve learned to create efficient and scalable applications, using modern frameworks like Next.js. My goal is to build user-friendly applications while staying updated with the latest technologies and trends.
+              </p>
+            </div>
+          </div>
+
+          {/* Education Section */}
+          <div className="relative flex items-start">
+            <FaGraduationCap className="text-white text-4xl absolute -left-4 top-0 transform transition-transform duration-300 hover:scale-110" />
+            <div className="border-l-4 border-white pl-6">
+              <h2 className="text-2xl font-semibold text-pink-500">Education</h2>
+              <p className="text-lg text-slate-300 leading-relaxed animate__animated animate__fadeIn animate__delay-4s">
+                I completed my Matriculation in 2016 and Intermediate in 2018 from Ali Public Higher Secondary School, Bhiria Road, Sindh. I recently completed my BSc in 2024 from Khairpur University. Currently, I am preparing to study Agentic AI to deepen my knowledge in artificial intelligence.
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
-  
-  )
-}
+    </div>
+  );
+};
 
-export default About
+export default About;
