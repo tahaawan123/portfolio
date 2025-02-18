@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Gym Website",
     imageSrc: "/gym.png",
-    projectLink: "https://gym-website-custom-css.vercel.app/",
+    projectLink: "https://gym-website-flax-three.vercel.app/",
   },
   {
     title: "Pakistan Travel Places",
