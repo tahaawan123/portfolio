@@ -154,7 +154,7 @@ const Header = () => {
                       <div className="mt-auto pb-8 px-4">
                         <div className="border-t border-gray-700 pt-4">
                           <p className="text-gray-400 text-sm">
-                            Full Stack Developer & UI/UX Designer
+                            Front-End Developer & UI/UX Enthusiast
                           </p>
                         </div>
                       </div>
