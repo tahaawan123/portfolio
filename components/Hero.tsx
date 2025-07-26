@@ -92,7 +92,7 @@ const Hero = () => {
             variants={containerVariants}
           >
             <Link
-              href="/Cv/TahaCv.pdf"
+              href="/Cv/Taha Cv.pdf"
               target='_blank'
               className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-purple-600 text-white py-3 px-6 rounded-full font-medium shadow-lg"
             >
