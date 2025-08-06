@@ -77,7 +77,7 @@ const Hero = () => {
             </h2>
           </motion.div>
           
-          {/* Description */}
+           {/* Description  */}
           <motion.p 
             className="text-lg text-gray-300 mb-8 max-w-xl"
             variants={itemVariants}
@@ -167,7 +167,7 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Decorative elements around image */}
+          {/* Decorative elements around image--- */}
           <div className="absolute -top-4 -left-4 w-20 h-20 rounded-full bg-red-500 mix-blend-soft-light filter blur-xl animate-ping-slow"></div>
           <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-purple-500 mix-blend-soft-light filter blur-xl animate-ping-slow animation-delay-2000"></div>
         </motion.div>
